@@ -1,0 +1,26 @@
+import java.util.*; 
+
+public class practice {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		long H = input.nextInt();
+		long M = input.nextInt();
+		long S = input.nextInt();
+		
+		long Sum = input.nextInt();
+		
+		S += Sum;
+		M += S/60; 
+		S %= 60; 
+		H += M/60; 
+		M %= 60;
+		H %= 24;
+		
+		System.out.print(H + " " + M + " " + S);
+
+	}
+
+}
