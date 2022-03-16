@@ -1,0 +1,22 @@
+import java.util.*; 
+
+public class practice {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int a = input.nextInt();
+		int b = input.nextInt();
+		
+		int first = b%10;
+		System.out.println(a*first);
+		
+		int B = b%100;
+		int second = B/10;
+		System.out.println(a*second);
+		
+		int third = b/100;
+		System.out.println(a*third);
+		System.out.println(a*b);
+	}
+
+}
